@@ -30,9 +30,7 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
 
     override fun onPress(primaryCode: Int) { keyboardView.isPreviewEnabled = false }
 
-    override fun onRelease(primaryCode: Int) {
-
-    }
+    override fun onRelease(primaryCode: Int) { }
 
     override fun onKey(primaryCode: Int, keyCodes: IntArray?) {
 
@@ -57,14 +55,7 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
                 caps = !caps
                 keyboard.setShifted(caps)
                 keyboardView.invalidateAllKeys()
-
-                keyboard.keys.forEach {
-
-                    if (it.codes.first() == primaryCode) {
-
-                        it.icon = resources.getDrawable(if (caps) R.drawable.ic_keyboard_capslock else R.drawable.ic_keyboard_caps)
-                    }
-                }
+                keyboard.keys.asSequence().first { it.codes.first() == primaryCode }?.icon = resources.getDrawable(if (caps) R.drawable.ic_keyboard_capslock else R.drawable.ic_keyboard_caps)
             }
             0 -> { }
             else -> {
@@ -123,23 +114,13 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
         super.onUpdateExtractingVisibility(ei)
     }
 
-    override fun onText(text: CharSequence?) {
+    override fun onText(text: CharSequence?) { }
 
-    }
+    override fun swipeRight() { }
 
-    override fun swipeRight() {
+    override fun swipeLeft() { }
 
-    }
+    override fun swipeUp() { }
 
-    override fun swipeLeft() {
-
-    }
-
-    override fun swipeUp() {
-
-    }
-
-    override fun swipeDown() {
-
-    }
+    override fun swipeDown() { }
 }
