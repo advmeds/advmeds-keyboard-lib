@@ -1,2 +1,2 @@
+include ':app',':keyboard'
 rootProject.name='CustomKeyboard'
-include ':app'

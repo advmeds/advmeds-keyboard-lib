@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomKeyboard</string>
+    <string name="ime_name" translatable="false">SmartHealth IME</string>
+    <string name="subtype" translatable="false">SmartHealthKeyboard</string>
+</resources>

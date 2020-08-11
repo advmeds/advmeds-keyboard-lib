@@ -1,4 +1,4 @@
-package com.advmeds.customkeyboard
+package com.advmeds.keyboard
 
 import android.content.Context
 import android.inputmethodservice.InputMethodService
@@ -11,7 +11,7 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import java.security.Key
 
-class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
+open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
 
     private lateinit var keyboardView: KeyboardView
     private lateinit var keyboard: Keyboard
@@ -52,7 +52,7 @@ class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardAction
             }
             Keyboard.KEYCODE_CANCEL -> {
 
-                hideWindow()
+                requestHideSelf(0)
             }
             Keyboard.KEYCODE_SHIFT -> {
 
