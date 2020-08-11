@@ -6,10 +6,8 @@ import android.inputmethodservice.Keyboard
 import android.inputmethodservice.KeyboardView
 import android.media.AudioManager
 import android.text.InputType
-import android.text.TextUtils
 import android.view.View
 import android.view.inputmethod.EditorInfo
-import java.security.Key
 
 open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
 

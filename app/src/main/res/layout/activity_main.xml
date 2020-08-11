@@ -7,12 +7,19 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <EditText android:layout_width="300dp"
-              android:layout_height="wrap_content"
-              app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintBottom_toBottomOf="parent"
-              app:layout_constraintEnd_toEndOf="parent" android:imeOptions="flagNoExtractUi"
-              android:inputType="textPassword" android:id="@+id/main_edit_text"/>
+    <EditText
+            android:id="@+id/main_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:imeOptions="flagNoExtractUi"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
