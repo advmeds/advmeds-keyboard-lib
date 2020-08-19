@@ -1,168 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:horizontalGap="0.5%p"
-    android:keyHeight="10%p"
-    android:keyWidth="7.5%p"
-    android:verticalGap="0.5%p">
+        android:horizontalGap="0.5%p"
+        android:keyWidth="7.5%p"
+        android:keyHeight="10%p"
+        android:verticalGap="0.5%p">
     <Row android:keyHeight="0.5%p" />
     <Row>
         <Key
-            android:codes="@integer/keycode_A"
-            android:horizontalGap="3.5%p"
-            android:keyEdgeFlags="left"
-            android:keyLabel="A" />
+                android:codes="@integer/keycode_A"
+                android:horizontalGap="3.5%p"
+                android:keyEdgeFlags="left"
+                android:keyLabel="A" />
         <Key
-            android:codes="@integer/keycode_B"
-            android:keyLabel="B" />
+                android:codes="@integer/keycode_B"
+                android:keyLabel="B" />
         <Key
-            android:codes="@integer/keycode_C"
-            android:keyLabel="C" />
+                android:codes="@integer/keycode_C"
+                android:keyLabel="C" />
         <Key
-            android:codes="@integer/keycode_D"
-            android:keyLabel="D" />
+                android:codes="@integer/keycode_D"
+                android:keyLabel="D" />
         <Key
-            android:codes="@integer/keycode_E"
-            android:keyLabel="E" />
+                android:codes="@integer/keycode_E"
+                android:keyLabel="E" />
         <Key
-            android:codes="@integer/keycode_F"
-            android:keyLabel="F" />
+                android:codes="@integer/keycode_F"
+                android:keyLabel="F" />
         <Key
-            android:codes="@integer/keycode_G"
-            android:keyLabel="G" />
+                android:codes="@integer/keycode_G"
+                android:keyLabel="G" />
         <Key
-            android:codes="@integer/keycode_one"
-            android:horizontalGap="3%p"
-            android:keyLabel="1" />
+                android:codes="@integer/keycode_one"
+                android:horizontalGap="3%p"
+                android:keyLabel="1" />
         <Key
-            android:codes="@integer/keycode_two"
-            android:keyLabel="2" />
+                android:codes="@integer/keycode_two"
+                android:keyLabel="2" />
         <Key
-            android:codes="@integer/keycode_three"
-            android:keyLabel="3" />
+                android:codes="@integer/keycode_three"
+                android:keyLabel="3" />
         <Key
-            android:codes="@integer/keycode_delete"
-            android:horizontalGap="3%p"
-            android:isRepeatable="true"
-            android:keyHeight="20.5%p"
-            android:keyIcon="@drawable/ic_backspace_square" />
+                android:codes="@integer/keycode_delete"
+                android:horizontalGap="3%p"
+                android:isRepeatable="true"
+                android:keyIcon="@drawable/ic_backspace" />
         <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="3.5%p"
-            android:keyEdgeFlags="right"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="3.5%p"
+                android:keyWidth="0px"
+                android:keyEdgeFlags="right" />
     </Row>
     <Row>
         <Key
-            android:codes="@integer/keycode_H"
-            android:horizontalGap="3.5%p"
-            android:keyEdgeFlags="left"
-            android:keyLabel="H" />
+                android:codes="@integer/keycode_H"
+                android:horizontalGap="3.5%p"
+                android:keyEdgeFlags="left"
+                android:keyLabel="H" />
         <Key
-            android:codes="@integer/keycode_I"
-            android:keyLabel="I" />
+                android:codes="@integer/keycode_I"
+                android:keyLabel="I" />
         <Key
-            android:codes="@integer/keycode_J"
-            android:keyLabel="J" />
+                android:codes="@integer/keycode_J"
+                android:keyLabel="J" />
         <Key
-            android:codes="@integer/keycode_K"
-            android:keyLabel="K" />
+                android:codes="@integer/keycode_K"
+                android:keyLabel="K" />
         <Key
-            android:codes="@integer/keycode_L"
-            android:keyLabel="L" />
+                android:codes="@integer/keycode_L"
+                android:keyLabel="L" />
         <Key
-            android:codes="@integer/keycode_M"
-            android:keyLabel="M" />
+                android:codes="@integer/keycode_M"
+                android:keyLabel="M" />
         <Key
-            android:codes="@integer/keycode_N"
-            android:keyLabel="N" />
+                android:codes="@integer/keycode_N"
+                android:keyLabel="N" />
         <Key
-            android:codes="@integer/keycode_four"
-            android:horizontalGap="3%p"
-            android:keyLabel="4" />
+                android:codes="@integer/keycode_four"
+                android:horizontalGap="3%p"
+                android:keyLabel="4" />
         <Key
-            android:codes="@integer/keycode_five"
-            android:keyLabel="5" />
+                android:codes="@integer/keycode_five"
+                android:keyLabel="5" />
         <Key
-            android:codes="@integer/keycode_six"
-            android:keyLabel="6" />
+                android:codes="@integer/keycode_six"
+                android:keyLabel="6" />
         <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="10.5%p"
-            android:keyEdgeFlags="right"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_done"
+                android:horizontalGap="3%p"
+                android:keyHeight="20.5%p"
+                android:keyLabel="↵" />
+        <Key
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="3.5%p"
+                android:keyWidth="0px"
+                android:keyEdgeFlags="right" />
     </Row>
     <Row>
         <Key
-            android:codes="@integer/keycode_O"
-            android:horizontalGap="3.5%p"
-            android:keyEdgeFlags="left"
-            android:keyLabel="O" />
+                android:codes="@integer/keycode_O"
+                android:horizontalGap="3.5%p"
+                android:keyEdgeFlags="left"
+                android:keyLabel="O" />
         <Key
-            android:codes="@integer/keycode_P"
-            android:keyLabel="P" />
+                android:codes="@integer/keycode_P"
+                android:keyLabel="P" />
         <Key
-            android:codes="@integer/keycode_Q"
-            android:keyLabel="Q" />
+                android:codes="@integer/keycode_Q"
+                android:keyLabel="Q" />
         <Key
-            android:codes="@integer/keycode_R"
-            android:keyLabel="R" />
+                android:codes="@integer/keycode_R"
+                android:keyLabel="R" />
         <Key
-            android:codes="@integer/keycode_S"
-            android:keyLabel="S" />
+                android:codes="@integer/keycode_S"
+                android:keyLabel="S" />
         <Key
-            android:codes="@integer/keycode_T"
-            android:keyLabel="T" />
+                android:codes="@integer/keycode_T"
+                android:keyLabel="T" />
         <Key
-            android:codes="@integer/keycode_U"
-            android:keyLabel="U" />
+                android:codes="@integer/keycode_U"
+                android:keyLabel="U" />
         <Key
-            android:codes="@integer/keycode_seven"
-            android:horizontalGap="3%p"
-            android:keyLabel="7" />
+                android:codes="@integer/keycode_seven"
+                android:horizontalGap="3%p"
+                android:keyLabel="7" />
         <Key
-            android:codes="@integer/keycode_eight"
-            android:keyLabel="8" />
+                android:codes="@integer/keycode_eight"
+                android:keyLabel="8" />
         <Key
-            android:codes="@integer/keycode_nine"
-            android:keyLabel="9" />
+                android:codes="@integer/keycode_nine"
+                android:keyLabel="9" />
         <Key
-            android:codes="@integer/keycode_cancel"
-            android:horizontalGap="3%p"
-            android:keyHeight="20.5%p"
-            android:keyIcon="@drawable/ic_keyboard_hide_square" />
-        <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="3.5%p"
-            android:keyEdgeFlags="right"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="3.5%p"
+                android:keyWidth="0px"
+                android:keyHeight="0px"
+                android:keyEdgeFlags="right" />
     </Row>
     <Row>
         <Key
-            android:codes="@integer/keycode_V"
-            android:horizontalGap="3.5%p"
-            android:keyEdgeFlags="left"
-            android:keyLabel="V" />
+                android:codes="@integer/keycode_V"
+                android:horizontalGap="3.5%p"
+                android:keyEdgeFlags="left"
+                android:keyLabel="V" />
         <Key
-            android:codes="@integer/keycode_W"
-            android:keyLabel="W" />
+                android:codes="@integer/keycode_W"
+                android:keyLabel="W" />
         <Key
-            android:codes="@integer/keycode_X"
-            android:keyLabel="X" />
+                android:codes="@integer/keycode_X"
+                android:keyLabel="X" />
         <Key
-            android:codes="@integer/keycode_Y"
-            android:keyLabel="Y" />
+                android:codes="@integer/keycode_Y"
+                android:keyLabel="Y" />
         <Key
-            android:codes="@integer/keycode_Z"
-            android:keyLabel="Z" />
+                android:codes="@integer/keycode_Z"
+                android:keyLabel="Z" />
         <Key
-            android:codes="@integer/keycode_zero"
-            android:horizontalGap="27%p"
-            android:keyLabel="0" />
+                android:codes="@integer/keycode_zero"
+                android:horizontalGap="27%p"
+                android:keyLabel="0" />
         <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="18.5%p"
-            android:keyEdgeFlags="right"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_cancel"
+                android:horizontalGap="11%p"
+                android:keyIcon="@drawable/ic_keyboard_hide" />
+        <Key
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="3.5%p"
+                android:keyWidth="0px"
+                android:keyEdgeFlags="right" />
     </Row>
     <Row android:keyHeight="3%p" />
 </Keyboard>

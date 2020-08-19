@@ -1,81 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:horizontalGap="0.5%p"
-    android:keyHeight="10%p"
-    android:keyWidth="15%p"
-    android:verticalGap="0.5%p">
+        android:horizontalGap="0.5%p"
+        android:keyWidth="15%p"
+        android:keyHeight="10%p"
+        android:verticalGap="0.5%p">
     <Row android:keyHeight="0.5%p" />
     <Row>
         <Key
-            android:codes="@integer/keycode_one"
-            android:horizontalGap="25%p"
-            android:keyEdgeFlags="left"
-            android:keyLabel="1" />
+                android:codes="@integer/keycode_one"
+                android:horizontalGap="25%p"
+                android:keyEdgeFlags="left"
+                android:keyLabel="1" />
         <Key
-            android:codes="@integer/keycode_two"
-            android:keyLabel="2" />
+                android:codes="@integer/keycode_two"
+                android:keyLabel="2" />
         <Key
-            android:codes="@integer/keycode_three"
-            android:keyLabel="3" />
+                android:codes="@integer/keycode_three"
+                android:keyLabel="3" />
         <Key
-            android:codes="@integer/keycode_delete"
-            android:horizontalGap="4%p"
-            android:isRepeatable="true"
-            android:keyHeight="20.5%p"
-            android:keyIcon="@drawable/ic_backspace"
-            android:keyWidth="7.5%p" />
+                android:codes="@integer/keycode_delete"
+                android:horizontalGap="4%p"
+                android:isRepeatable="true"
+                android:keyWidth="7.5%p"
+                android:keyIcon="@drawable/ic_backspace" />
         <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="20%p"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="20%p"
+                android:keyWidth="0px" />
     </Row>
     <Row>
         <Key
-            android:codes="@integer/keycode_four"
-            android:horizontalGap="25%p"
-            android:keyLabel="4" />
+                android:codes="@integer/keycode_four"
+                android:horizontalGap="25%p"
+                android:keyLabel="4" />
         <Key
-            android:codes="@integer/keycode_five"
-            android:keyLabel="5" />
+                android:codes="@integer/keycode_five"
+                android:keyLabel="5" />
         <Key
-            android:codes="@integer/keycode_six"
-            android:keyLabel="6" />
+                android:codes="@integer/keycode_six"
+                android:keyLabel="6" />
         <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="28%p"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_done"
+                android:horizontalGap="4%p"
+                android:keyWidth="7.5%p"
+                android:keyHeight="20.5%p"
+                android:keyLabel="↵" />
+        <Key
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="28%p"
+                android:keyWidth="0px" />
     </Row>
     <Row>
         <Key
-            android:codes="@integer/keycode_seven"
-            android:horizontalGap="25%p"
-            android:keyLabel="7" />
+                android:codes="@integer/keycode_seven"
+                android:horizontalGap="25%p"
+                android:keyLabel="7" />
         <Key
-            android:codes="@integer/keycode_eight"
-            android:keyLabel="8" />
+                android:codes="@integer/keycode_eight"
+                android:keyLabel="8" />
         <Key
-            android:codes="@integer/keycode_nine"
-            android:keyLabel="9" />
+                android:codes="@integer/keycode_nine"
+                android:keyLabel="9" />
         <Key
-            android:codes="@integer/keycode_cancel"
-            android:horizontalGap="4%p"
-            android:keyHeight="20.5%p"
-            android:keyIcon="@drawable/ic_keyboard_hide"
-            android:keyWidth="7.5%p" />
-        <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="20%p"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="20%p"
+                android:keyWidth="0px" />
     </Row>
     <Row>
         <Key
-            android:codes="@integer/keycode_zero"
-            android:horizontalGap="40.5%p"
-            android:keyLabel="0" />
+                android:codes="@integer/keycode_zero"
+                android:horizontalGap="40.5%p"
+                android:keyLabel="0" />
         <Key
-            android:codes="@integer/keycode_undefined"
-            android:horizontalGap="45%p"
-            android:keyWidth="0px" />
+                android:codes="@integer/keycode_cancel"
+                android:horizontalGap="19.5%p"
+                android:keyWidth="7.5%p"
+                android:keyIcon="@drawable/ic_keyboard_hide" />
+        <Key
+                android:codes="@integer/keycode_undefined"
+                android:horizontalGap="45%p"
+                android:keyWidth="0px" />
     </Row>
     <Row android:keyHeight="3%p" />
 </Keyboard>

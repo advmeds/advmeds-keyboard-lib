@@ -10,6 +10,7 @@ import android.inputmethodservice.KeyboardView
 import android.media.AudioManager
 import android.os.Build
 import android.text.InputType
+import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import androidx.core.content.res.ResourcesCompat
@@ -74,6 +75,21 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
                 keyboard.isShifted = caps
                 keyboardView.invalidateAllKeys()
                 keyboard.keys.asSequence().first { it.codes.first() == primaryCode }?.icon = resources.getDrawableBy(if (caps) R.drawable.ic_keyboard_capslock else R.drawable.ic_keyboard_caps)
+            }
+            Keyboard.KEYCODE_DONE -> {
+
+                val options = currentInputEditorInfo.imeOptions
+                val actionId = options and (EditorInfo.IME_MASK_ACTION or EditorInfo.IME_FLAG_NO_ENTER_ACTION)
+
+                when (actionId) {
+                    EditorInfo.IME_ACTION_GO,
+                    EditorInfo.IME_ACTION_SEARCH,
+                    EditorInfo.IME_ACTION_SEND,
+                    EditorInfo.IME_ACTION_NEXT,
+                    EditorInfo.IME_ACTION_DONE,
+                    EditorInfo.IME_ACTION_PREVIOUS -> sendDefaultEditorAction(true)
+                    else -> ic.sendKeyEvent(KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER))
+                }
             }
             resources.getInteger(R.integer.keycode_undefined) -> {
             }
