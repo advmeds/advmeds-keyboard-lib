@@ -25,11 +25,11 @@ If device is rooted, you can set default input method with [`RootUtils`](https:/
 
 ```kotlin
 Handler().post {
-            if (RootUtils.isDeviceRooted && RootUtils.canRunRootCommands()) {
-                val allIMEs = (application.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).inputMethodList
+	if (RootUtils.isDeviceRooted && RootUtils.canRunRootCommands()) {
+		val allIMEs = (application.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).inputMethodList
                 val mIME = allIMEs.first { it.id.contains(BuildConfig.APPLICATION_ID) && it.id.contains(MyInputMethodService::class.java.simpleName) }
                 RootUtils.excute("ime enable ${mIME.id}")
                 RootUtils.excute("ime set ${mIME.id}")
-            }
-        }
+	}
+}
 ```
