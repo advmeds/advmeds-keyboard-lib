@@ -21,7 +21,9 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
     private lateinit var keyboard: Keyboard
 
     private var mCurKeyboard = InputType.TYPE_NULL
-    private var caps = false
+    private var caps
+        get() = keyboard.isShifted
+        set(value) { keyboard.isShifted = value }
 
     @SuppressLint("InflateParams")
     override fun onCreateInputView(): View {
@@ -72,7 +74,6 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
             Keyboard.KEYCODE_SHIFT -> {
 
                 caps = !caps
-                keyboard.isShifted = caps
                 keyboardView.invalidateAllKeys()
                 keyboard.keys.asSequence().first { it.codes.first() == primaryCode }?.icon = resources.getDrawableBy(if (caps) R.drawable.ic_keyboard_capslock else R.drawable.ic_keyboard_caps)
             }
