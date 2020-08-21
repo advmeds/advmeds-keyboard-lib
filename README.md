@@ -4,7 +4,7 @@
 
 ## Usage:
 
-1.Add it in your root build.gradle(Project) at the end of repositories:
+1.Add it to your root build.gradle
 
     allprojects {
 	    repositories {
@@ -13,13 +13,13 @@
         }
     }
     
-2.Add the dependency in your root build.gradle(Module)
+2.Add the dependency to your app module's build.gradle
 
 	dependencies {
 	        implementation 'com.github.advmeds-service:advmeds-keyboard-lib:version'
 	}
 
-## Set default input method
+## Set default input method:
 
 If device is rooted, you can set default input method with [`RootUtils`](https://github.com/advmeds-service/advmeds-keyboard-lib/blob/master/app/src/main/java/com/advmeds/customkeyboard/RootUtils.kt).
 
