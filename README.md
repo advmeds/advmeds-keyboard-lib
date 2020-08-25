@@ -4,7 +4,21 @@
 
 ## Usage:
 
+Setting the `"textCapCharacters"` input type for EditText:
 
+![](https://github.com/advmeds-service/advmeds-keyboard-lib/blob/master/images/keyboard_id.png)
+
+Setting the `"textPassword"`、`"textVisiblePassword"` input type for EditText:
+
+![](https://github.com/advmeds-service/advmeds-keyboard-lib/blob/master/images/keyboard_password.png)
+
+Setting the `"number"`、`"phone"` input type for EditText:
+
+![](https://github.com/advmeds-service/advmeds-keyboard-lib/blob/master/images/keyboard_number.png)
+
+In addition to the above:
+
+![](https://github.com/advmeds-service/advmeds-keyboard-lib/blob/master/images/keyboard_qwerty.png)
 
 ## Installation:
 
