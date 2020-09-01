@@ -17,6 +17,11 @@ import androidx.core.content.res.ResourcesCompat
 
 open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
 
+    companion object {
+        /** used to specify that the IME does not need to show its extracted text UI. **/
+        var flagNoExtractUI: Boolean = true
+    }
+
     private lateinit var keyboardView: KeyboardView
     private lateinit var keyboard: Keyboard
 
@@ -42,7 +47,7 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
         keyboardView.isPreviewEnabled = false
     }
 
-    override fun onRelease(primaryCode: Int) { }
+    override fun onRelease(primaryCode: Int) {}
 
     private fun Resources.getDrawableBy(id: Int): Drawable? {
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -75,7 +80,8 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
 
                 caps = !caps
                 keyboardView.invalidateAllKeys()
-                keyboard.keys.asSequence().first { it.codes.first() == primaryCode }?.icon = resources.getDrawableBy(if (caps) R.drawable.ic_keyboard_capslock else R.drawable.ic_keyboard_caps)
+                keyboard.keys.asSequence().first { it.codes.first() == primaryCode }?.icon =
+                    resources.getDrawableBy(if (caps) R.drawable.ic_keyboard_capslock else R.drawable.ic_keyboard_caps)
             }
             Keyboard.KEYCODE_DONE -> {
 
@@ -155,7 +161,7 @@ open class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardA
     }
 
     override fun onUpdateExtractingVisibility(ei: EditorInfo?) {
-        ei?.imeOptions = ei?.imeOptions ?: EditorInfo.IME_FLAG_NO_EXTRACT_UI
+        ei?.also { if (flagNoExtractUI) { it.imeOptions = it.imeOptions or EditorInfo.IME_FLAG_NO_EXTRACT_UI } }
         super.onUpdateExtractingVisibility(ei)
     }
 
