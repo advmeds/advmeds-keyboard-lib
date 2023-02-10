@@ -5,7 +5,8 @@
         <service
                 android:name=".MyInputMethodService"
                 android:label="@string/ime_name"
-                android:permission="android.permission.BIND_INPUT_METHOD">
+                android:permission="android.permission.BIND_INPUT_METHOD"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
